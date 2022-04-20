@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bugs and Errors</title>
+</head>
+<body>
+    <h1>Bugs & Errores</h1>
+    <p>
+        Se dice que debbugear y encontrar los errores de un codigo es mas dificil
+        que escribir el codigo de inicio. Por ende se puede deducir que para
+         debuggear un codigo, debes de saber mas que quien escribio el codigo.
+    </p>
+    <p>
+        Javascript es un lenguaje muy flexible y por lo mismo deja pasar mas errores 
+        que la mayoria del resto de los lenguajes, por decirlo de una forma, existen 
+        pocas cosas que hacen quejarse a Javascript, una de ellas es escribir con 
+        una gramatica incorrecta, otra es querer utilizar como funcion algo que no 
+        es una funcion. Pero fuera de estas cosas un programa sin sentido lo mas 
+        que te arroja es algun NaN u undefined, mientras continua computando al creer 
+        que hace algo significativo. 
+    </p>
+    <p>
+        Existe una herramienta build in para reducir errores que se llama Strict Mode
+        y se implementa al escribir "use strict" justo sobre el codigo que se quiera
+        protejer con ello. Detecta faltas como no escribir let al declarar una variable
+        o new en un constructor y algunos mal usos de this. 
+    </p>
+    <p>
+        Tambien se pueden utilizar los tipos, de alguna manera como se hace en typescript. 
+        Pero en este caso se haria como una convencion entre desarrolladores. 
+    </p>
+    <p>
+        Se pueden buscar los errores de un codigo de la manera tradicional que 
+        es corriendolo y reparando el primer bloqueo, y volverlo a correr para atender 
+        el segundo y asi sucesivamente hasta terminar. Esta de mas decir que esto es 
+        poco eficiente.
+    </p>
+    <p>
+        Asi que es mejor escribir un programa que busque errores en otros programas, 
+        que aunque normalmente es mas tardado que buscar errores de manera tradicional, 
+        cuando terminas ya tienes un programa con el cual la siguiente vez puedes hacer 
+        dicha tarea en segundos.  
+    </p>
+    <p>
+        El programa mas simple de este tipo se hace con un listado de declaraciones if
+        dentro de el, que si alguna no cumple arroja un error.
+    </p>
+    <p>
+        Un debuggeado tradicional consta de colocar console.log's de manera estrategica
+        a lo largo del programa y asi ir "encerrando" al bug hasta encontrarlo. Tambien 
+        existe una propiedad debugging en algunos navegadores
+    </p>
+    <p>
+        Existe el metodo de error de propagacion que consta de hacer que el test devuelva un 
+        caracter especial en caso de encontrarse con un error externo.
+    </p>
+    <p>
+        Tambien esta el metodo de excepciones, que utiliza las keywords throw, try y catch, 
+        la primera se coloca despues de las declaraciones if, para detectar la excepcion. Pero es
+        catch quien "atrapa" esta excepcion y regresa un mensaje determinado por el desarrollador. 
+        Mientras  try contiene la respuesta a los casos que entran dentro de los if. 
+    </p>
+
+
+
+
+
+
+    <script src="excercises-cap8.js"></script>
+</body>
+</html>
