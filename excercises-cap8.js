@@ -67,3 +67,5 @@ const box = {
 
 box.lock();
 console.log(box.locked);
+
+console.log ('rfr')
